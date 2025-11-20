@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranav Kumar — Portfolio</title>
+  <meta name="description" content="Pranav Kumar — Software developer portfolio. Projects, skills and contact." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pranav Kumar — Portfolio" />
+  <meta property="og:description" content="Software developer portfolio with projects, skills and contact." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Pranav Kumar</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Pranav</span>.</h1>
+          <p class="lead">A student & aspiring Software Developer. I build web apps with clean code and thoughtful UI.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn ghost" href="C:\Users\prana\OneDrive\Desktop\portfolio\Resume_Pranav_22BCS12202.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <!-- Replace with your photo or illustration -->
+          <img src="avatar.jpg" alt="Pranav avatar" class="avatar" />
+          <p class="hero-role">Full-stack • MERN • C++</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="grid-2">
+          <div>
+            <p>I am a student learning full-stack development and preparing for SDE roles. I enjoy building projects that solve real problems and writing clean, maintainable code. Currently focusing on MERN, DSA with C++, and web UI/UX.</p>
+            <ul class="about-list">
+              <li><strong>Location:</strong> India</li>
+              <li><strong>Learning:</strong> MERN, C++, System Design</li>
+              <li><strong>Email:</strong> <a href="mailto:pranavkr2912@gmail.com">pranavkr2912@gmail.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Quick facts</h3>
+            <p>4 hours/day study for DSA, building real projects, improving communication skills. I prefer concise, production-ready solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="cards">
+          
+          <article class="card">
+            <img src="project1.png" alt="Project 1 screenshot" class="card-img" />
+            <div class="card-body">
+              <h3>Project One — URL Shortener</h3>
+              <p>Simple and fast URL shortener with analytics. Tech: Node.js, Express, MongoDB, React (deployed).</p>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/YOURUSERNAME/project-one" target="_blank" rel="noopener">View code</a>
+                <a class="link" href="#" target="_blank" rel="noopener">Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="card">
+            <img src="project2.png" alt="Project 2 screenshot" class="card-img" />
+            <div class="card-body">
+              <h3>Project Two — Expense Tracker</h3>
+              <p>Responsive expense tracker with local storage and charting. Tech: HTML/CSS/JS, Chart.js.</p>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/YOURUSERNAME/project-two" target="_blank" rel="noopener">View code</a>
+                <a class="link" href="#" target="_blank" rel="noopener">Live demo</a>
+              </div>
+            </div>
+          </article>
+
+         
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">JavaScript</div>
+          <div class="skill">React / Next.js</div>
+          <div class="skill">Node.js / Express</div>
+          <div class="skill">MongoDB/SQL</div>
+          <div class="skill">C++ / DSA / Java</div>
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="grid-2">
+          <div>
+            <p>If you'd like to work together or want to ask anything, email me or use the contact button below.</p>
+            <p><strong>Email:</strong> <a href="mailto:pranavkr2912@gmail.com">pranavkr2912@gmail.com</a></p>
+            <p class="socials">
+              <a href="https://github.com/pranavkr2912" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="https://www.linkedin.com/in/pranav-kumar-87a831249/" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </div>
+          <div>
+            <form id="contactForm" class="form">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" required />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <div class="form-footer">
+                <button type="submit" class="btn">Send</button>
+                <small id="formStatus" class="muted"></small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pranav Kumar — Built with ♥ · <a href="https://github.com/pranavkr2912/portfolio" target="_blank" rel="noopener">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
